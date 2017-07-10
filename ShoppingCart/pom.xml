@@ -18,6 +18,7 @@
         </repository>
     </repositories>
   <dependencies>
+  
   <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -135,23 +136,31 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+
   </dependencies>
   <build>
     <finalName>ShoppingCart</finalName>
     <plugins>
  
             <!-- Config: Maven Tomcat Plugin -->
-            <!-- http://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
+            <!-- https://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat8-maven-plugin -->
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <!-- Config: contextPath and Port (Default - /SpringMVCAnnotationShoppingCart
-                    : 8080) -->
+                    : 8080)      -->
                  <configuration> 
-                 <path>/ShoppingCart</path> 
-                 <port>8081</port> 
-                 </configuration> 
+                    <source>1.8</source>
+                    <target>1.8</target>
+	                 <path>/</path> 
+	                 <port>8989</port> 
+               </configuration> 
+                  <!-- <configuration>
+                 	<source>1.8</source>
+                    <target>1.8</target>
+                 </configuration>-->
             </plugin>
         </plugins>
     

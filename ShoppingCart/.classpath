@@ -6,6 +6,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="src/main/webapp/css"/>
+	<classpathentry kind="src" path="src/main/webapp/images"/>
 	<classpathentry kind="src" path="src/main/webapp/WEB-INF/views"/>
 	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
@@ -31,5 +33,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/xampp/tomcat/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_131"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
